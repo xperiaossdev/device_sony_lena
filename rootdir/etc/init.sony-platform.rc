@@ -12,18 +12,7 @@ on early-init
         flash_led \
         camera_sync
 
-
-    # Enable power key force crash on userdebug variant
-    
-
-    # load kernel module to read ufs write/erase count via debugfs
-    
-
-    
-
     # Change reset behavior to warm reset
-    
-
     write /sys/module/msm_rtb/parameters/enable 0
 
     # change the compression algorithm for zRAM
@@ -40,8 +29,6 @@ on init
     exec u:r:tad:s0 system -- /vendor/bin/wait4tad
 
     # Enable panic on out of memory
-    
-
     write /proc/sys/vm/swappiness 100
 
     # SONY: Enable wakeup irq module
@@ -97,8 +84,6 @@ on charger
     chmod 0660 /sys/power/wake_unlock
 
     # charge_service
-    
-    
     start charge_service
 
     # charge power service
@@ -191,7 +176,7 @@ on boot
     chown system system /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
     chmod 0660 /sys/devices/virtual/water_detection/wdet/wdet_polling_restart
 
-# Camera
+    # Camera
     write /dev/cpuset/camera-daemon/cpus 0-7
 
     # USB
@@ -325,9 +310,6 @@ on post-fs-data
     # Camera sync
     chown cameraserver camera /dev/camera_sync
     chmod 0770 /dev/camera_sync
-
-    # Camera to enable system crash from DSP
-    
 
     # WLAN
     # Set default Wi-Fi country code as "00". It can be overridden by customization.

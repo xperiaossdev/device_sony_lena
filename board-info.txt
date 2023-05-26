@@ -1,0 +1,1 @@
+require board=lito|pdx213|lena|XQ-BT44|XQ-BT52
