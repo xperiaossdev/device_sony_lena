@@ -299,7 +299,7 @@ PRODUCT_PACKAGES += \
 
 # Fstab
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:vendor/etc/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:vendor/etc/fstab.default
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -441,7 +441,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default
 
 # RIL
 PRODUCT_PACKAGES += \
