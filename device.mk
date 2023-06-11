@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/sm8250-common/sm8250-common-vendor.mk)
+$(call inherit-product, vendor/sony/lena/lena-vendor.mk)
 
 # Inherit from sony extra
 $(call inherit-product-if-exists, vendor/sony/extra-lena/extra.mk)
