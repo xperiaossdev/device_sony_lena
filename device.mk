@@ -24,7 +24,7 @@ $(call inherit-product, vendor/sony/lena/lena-vendor.mk)
 $(call inherit-product-if-exists, vendor/sony/extra-lena/extra.mk)
 
 # VNDK
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 
 # Additional native libraries
